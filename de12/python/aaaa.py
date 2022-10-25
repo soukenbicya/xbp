@@ -1,7 +1,7 @@
 #あなたにオススメの素数診断ゲーム
-value = int(input('直感で2回数字を選び、1～10の数を入力してください'))
+value = int(input('直感で2回数字を選び、1～5の数を入力してください'))
 if value == 1:
-        value = int(input('直感で数字を選び、1～10の数を入力してください'))
+        value = int(input('直感で数字を選び、1～5の数を入力してください'))
         if value == 1:
          print('３です')
         elif value == 2:
