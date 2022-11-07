@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>外部ライブラリ</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>ゲーム２</h1>
+    <div>今回は、以前学んだことに加えて新しく班で考えた「こんなものがあったらいいな」に基づいて自分たちでプログラムを考えた。<br>
+        <br>乱数のコードと色を表示させるコードを組み合わせて作ろうと取り組んだ。その結果がこのようなコードになった。<br>
+        <br><code>
+            <ol style="list-style:decimal-leading-zero outside;left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+            <li style="background-color:#EFF;">import numpy as np</li>
+            <li style="background-color:#EEF;">color = list(np.random.choice(range(256), size=5))</li>
+            <li style="background-color:#EFF;">print(color)</li>
+            <li style="background-color:#EEF;">import random</li>
+            <li style="background-color:#EFF;">color = [<font style="color:brown;">"#"</font>+<font style="color:brown;">''</font>.join([random.choice(<font style="color:brown;">'0123456789ABCDEF'</font>) for j in range(6)])]</li>
+            <li style="background-color:#EEF;">print(color)</li>
+            <li style="background-color:#EFF;">import random</li>
+            <li style="background-color:#EEF;"></li>
+            <li style="background-color:#EFF;">import tkinter as tk</li>
+            <li style="background-color:#EEF;"></li>
+            <li style="background-color:#EFF;">class Application(tk.Frame):</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, master = None):</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super().__init__(master)</li>
+            <li style="background-color:#EEF;"></li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.master.title(<font style="color:brown;">"タイトル"</font>)    # ウィンドウタイトル</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.master.geometry(<font style="color:brown;">"300x200"</font>) # ウィンドウサイズ(幅x高さ)</li>
+            <li style="background-color:#EFF;"></li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Canvasの作成</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;canvas = tk.Canvas(</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.master, </li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width = 200,</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height = 100,</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bg = <font style="color:brown;">""</font></li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Canvasを配置</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;canvas.pack()</li>
+            <li style="background-color:#EFF;"></li>
+            <li style="background-color:#EEF;">if __name__ == <font style="color:brown;">"__main__"</font>:</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;root = tk.Tk()</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;app = Application(master = root)</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;app.mainloopcolor = [<font style="color:brown;">"#"</font>+<font style="color:brown;">''</font>.join([random.choice(<font style="color:brown;">'0123456789ABCDEF'</font>) for j in range(6)])]</li>
+            <li style="background-color:#EEF;">print(color)</li>
+            <li style="background-color:#EFF;"></li>
+            <li style="background-color:#EEF;">tk.scatter(random.randint(0, 10), random.randint(0,10), c=color, s=200)</li>
+            <li style="background-color:#EFF;">tk.show()</li>
+            </ol></code>インターネットを用いてコードを組み合わせてみたが途中までは表示されていたが組み合わせているうちにエラーが起こってしまった。<br>
+            そのため今回は完成には至らなかったが、何を直したら上手く動くようになるのかそれについても考えていきたい。<br>
+            <br>参考サイト
+            https://qiita.com/nnahito/items/2ab3ad0f3adacc3314e6
+            https://imagingsolution.net/program/python/tkinter/canvas/
+
+
+
+
+
+
+
+
+    </div>
