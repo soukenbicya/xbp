@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>ビジネスコンテスト</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/xbp.ico">
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Positioning Map</title>
+        <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+    </head>
+    <body>
+        <canvas id="positioningMap" width="400" height="400"></canvas>
+    
+        <script>
+            var ctx = document.getElementById('positioningMap').getContext('2d');
+            var positioningMap = new Chart(ctx, {
+                type: 'scatter',
+                data: {
+                    datasets: [{
+                        label: 'Positioning Map',
+                        data: [
+                            { x: 3, y: 5, label: 'Product A' },
+                            { x: 2, y: 3, label: 'Product B' },
+                            { x: 4, y: 4, label: 'Product C' },
+                            { x: 1, y: 2, label: 'Product D' }
+                        ],
+                        backgroundColor: 'blue' // ドットの色
+                    }]
+                },
+                options: {
+                    scales: {
+                        x: {
+                            type: 'linear',
+                            position: 'bottom'
+                        },
+                        y: {
+                            type: 'linear',
+                            position: 'left'
+                        }
+                    }
+                }
+            });
+        </script>
+    </body>
+    </html>
+    
