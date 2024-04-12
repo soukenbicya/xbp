@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>私のホームページ</title>
-    <link rel="stylesheet" href="styles.css"> <!-- CSSファイルをリンクします -->
+    <link rel="stylesheet" href="styles.css"> <!-- CSSファイルをリンク -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>私のホームページ</title>
+        <style>
+            body {
+                background-color: #f0f0f0;
+                color: #333;
+            }
+            /* 他のスタイルもここに追加 */
+        </style>
+    </head>
+    
 </head>
 <body>
     <header>
@@ -15,36 +28,40 @@
     </main>
     <footer>
         <p>© 2024 私のホームページ</p>
+        
     </footer>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>図形にリンクを設定する</title>
+</head>
+<body>
+    <svg width="300" height="100">
+        <a href="index1.html">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+        </a>
+    </svg>
 </body>
 </html>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('background.jpg'); /* 背景画像のファイルパスを指定します */
-    background-size: cover; /* 画像をウィンドウ全体にカバーさせます */
-    background-position: center; /* 画像を中央に配置します */
-    background-repeat: no-repeat; /* 画像の繰り返しを禁止します */
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>図形にテキストを乗せる</title>
+</head>
+<body>
+    <svg width="200" height="200">
+        <a href="https://example.com">
+            <circle cx="100" cy="100" r="80" stroke="black" stroke-width="2" fill="red" />
+            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="16">クリック</text>
+        </a>
+    </svg>
+</body>
+</html>
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-main {
-    padding: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+</body>
+</html>
