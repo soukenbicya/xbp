@@ -5,21 +5,68 @@
     <title>Doyolab</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/xbp.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* フォントファミリーを指定 */
+            margin: 0; /* ページのマージンを0に設定 */
+            padding: 0; /* ページのパディングを0に設定 */
+            background-image: url("https://th.bing.com/th/id/R.3aa030dc1338ea734beb50638bba448d?rik=Jxfbkt4XroyC1g&riu=http%3a%2f%2fwww.tmyun.com%2fmid%2fyun_8938.jpg&ehk=v22YlEGUe%2boQXx7yMiLm6U77ka9a6HI8NFoXsJtfPsc%3d&risl=&pid=ImgRaw&r=0");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* 背景画像を固定 */
+            background-position: center;
+            background-color: rgba(255, 255, 255, 0.5); /* 背景色を薄くする */
+            min-height: 100vh; /* ビューポートの高さと同じに設定 */
+            display: flex; /* フレックスボックスを使用 */
+            flex-direction: column; /* 要素を上から下に並べる */
+        }
+
+        .container {
+            max-width: 800px; /* コンテンツの最大幅を設定 */
+            margin: 20px auto; /* 上下の余白を20px、左右の余白を自動調整して中央に配置 */
+            padding: 20px; /* 上下左右のパディングを設定 */
+            background-color: transparent; /* コンテンツの背景色を透明に */
+            flex: 1; /* コンテンツをフレックスアイテムとして伸縮可能にする */
+        }
+
+        .logo-container {
+            margin-bottom: 20px; /* ロゴとコンテンツの間隔を設定 */
+        }
+
+        img {
+            max-width: 100%; /* 画像の幅が親要素の幅を超えないようにする */
+            height: auto; /* アスペクト比を維持する */
+            display: block; /* 画像をブロック要素にする */
+            margin-bottom: 20px; /* 画像とテキストの間隔を設定 */
+            float: left; /* 画像を左寄せにする */
+        }
+
+        h1, h2, p, ul, li {
+            background-color: rgba(255, 255, 255, 0.5); /* テキストの背景色を透明に */
+            padding: 10px; /* テキストのパディングを設定 */
+        }
+    </style>
 </head>
 <body>
-    <logotohome>
-    <a href="../index.html"><img src="./images/0_XBlogo.png" alt=""></a>
+    <div class="container">
     
-    <h1>Doyolab</h1>
+        
+        <h1>Doyolab</h1>
 
-    <h2>鎌倉共創プロジェクト</h2>
-    <l1>活動内容</l1>
-    <br>5月11日に行われるインタビューに向けての事前準備を行った。<br>
-    <br>テキストマイニングを行い、どんな言葉が多く使われているのかやその言葉同士の関連性について確認した<br>
-    <br>テキストマイニングは、スマホのWordを用いて、音声入力を用いて行った。<br>
-
+        <h2>鎌倉共創プロジェクト</h2>
+        <p>活動内容</p>
+        <ul>
+            <li>5月11日に行われるインタビューに向けての事前準備を行った。</li>
+            <li>テキストマイニングを行い、どんな言葉が多く使われているのかやその言葉同士の関連性について確認した。</li>
+            <li>テキストマイニングは、スマホのWordを用いて、音声入力を用いて行った。</li>
+            <li>4月26日リハーサルを行った。</li>
+            <li>リハーサルの際に、マイクとカメラを使用した。また、wordを使用して、テキストマイニングも行った</li>
+        </ul>
+        
+        <img src="./images/mikumo.png" width="200" alt="">
+        <img src="./images/mikumo2.png" width="200" alt="">
+        <img src="./images/mikumo3.png" width="200" alt="">
        
-    <img src="./images/mikum_kyoukinetwork.png.png" width="100%"><br>
-    <img src="./images/mikumo_sunburst.png" width="100%"><br>
-    <img src="./images/mikumo_tangohinsyutu.png" width="100%"><br>
+    </div>
+</body>
 </html>

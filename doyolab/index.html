@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="jp">
-
-<!DOCTYPE html>
-<html lang="jp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +7,26 @@
     <link rel="stylesheet" href="./css/style.css"> <!-- CSSファイルをリンク -->
     <link rel="shortcut icon" href="./images/xbp.ico">
     <style>
+        /* SVG内のテキストスタイル */
+        text {
+            cursor: pointer; /* マウスカーソルをポインターに変更 */
+            text-decoration: underline; /* テキストを下線付きにする */
+        }
+
+        body {
+            background-image: url("https://backgrounds-free.com/material/07-download/0649-large-image-l.png"); /* 背景画像のURLを指定 */
+            background-size: cover; /* 画面にぴったり合うように背景画像を調整 */
+            background-position: center; /* 画像を中央に配置 */
+            background-repeat: no-repeat; /* 背景画像の繰り返しを無効にする */
+            color: white; /* テキストの色を白に設定 */
+            margin: 0; /* ページのマージンを0に設定 */
+            padding: 0; /* ページのパディングを0に設定 */
+            height: 100vh; /* ページ全体の高さをビューポートの高さに設定 */
+            display: flex; /* コンテンツを中央に配置するために Flexbox を使用 */
+            justify-content: center; /* コンテンツを水平方向に中央揃え */
+            align-items: center; /* コンテンツを垂直方向に中央揃え */
+        }
+
         .logo-container {
             display: flex; /* 要素を横に並べる */
             align-items: center; /* 垂直方向に中央揃え */
@@ -35,46 +52,25 @@
         }
     </style>
 </head>
-
-<!DOCTYPE html>
-<html lang="jp">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XBP_HPsample</title>
-    <link rel="stylesheet" href="./css/style.css"> <!-- CSSファイルをリンク -->
-    <link rel="shortcut icon" href="./images/xbp.ico">
-    <style>
-        /* SVG内のテキストスタイル */
-        text {
-            cursor: pointer; /* マウスカーソルをポインターに変更 */
-            text-decoration: underline; /* テキストを下線付きにする */
-        }
-    </style>
-</head>
 <body>
-    <!-- リンク -->
-    <a href="essence.html">
-        <svg width="300" height="100">
-            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="Green" font-size="24">Essence Of Challenge</text>
-        </svg>
-    </a>
-    
-    <!-- リンク -->
-    <a href="index1.html">
-        <svg width="300" height="100">
-            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="Green" font-size="24">KAMAKURA CITY</text>
-        </svg>
-    </a>
-
-    <!-- リンク -->
-    <a href="index2.html">
-        <svg width="300" height="100">
-            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="Green" font-size="24">SONY.YOKOHAMA CITY</text>
-        </svg>
-    </a>
-
-    <!-- 他のリンクも同様に追加可能 -->
-
+    <!-- ロゴとリンク -->
+    <div class="logo-container">
+        <a href="../index.html"><img src="./images/0_XBlogo.png" alt="Home"></a>
+        <a href="essence.html">
+            <svg width="300" height="100">
+                <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="Black" font-size="24">Essence Of Challenge</text>
+            </svg>
+        </a>
+        <a href="index1.html">
+            <svg width="300" height="100">
+                <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="Black" font-size="24">KAMAKURA CITY</text>
+            </svg>
+        </a>
+        <a href="index2.html">
+            <svg width="300" height="100">
+                <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="Black" font-size="24">SONY.YOKOHAMA CITY</text>
+            </svg>
+        </a>
+    </div>
 </body>
 </html>
