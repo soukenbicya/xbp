@@ -5,17 +5,68 @@
     <title>Doyolab</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/xbp.ico">
+    <style>
+        /* 写真を正常な形で表示するため、border-radiusをリセット */
+        img {
+            border-radius: 0 !important;
+            max-width: 100%; /* 画像の幅が親要素の幅を超えないようにする */
+            height: auto; /* アスペクト比を維持する */
+            display: block; /* 画像をブロック要素にする */
+            margin-bottom: 20px; /* 画像とテキストの間隔を設定 */
+        }
+
+        body {
+            font-family: Arial, sans-serif; /* フォントファミリーを指定 */
+            margin: 0; /* ページのマージンを0に設定 */
+            padding: 0; /* ページのパディングを0に設定 */
+            background-image: url("https://static.amanaimages.com/imgroom/rf_preview640/11019/11019039467.jpg"); /* 背景画像のURLを指定 */
+            background-size: cover; /* 画面にぴったり合うように背景画像を調整 */
+            background-position: center; /* 画像を中央に配置 */
+            background-repeat: no-repeat; /* 背景画像の繰り返しを無効にする */
+            opacity: 0.8; /* 背景の透明度を設定 */
+            color: white; /* テキストの色を白に設定 */
+        }
+
+        .container {
+            max-width: 800px; /* コンテンツの最大幅を設定 */
+            margin: 20px auto; /* 上下の余白を20px、左右の余白を自動調整して中央に配置 */
+            padding: 20px; /* 上下左右のパディングを設定 */
+            background-color: rgba(0, 0, 0, 0.5); /* コンテンツの背景色を指定 */
+            border-radius: 10px; /* コンテンツの角を丸くする */
+            font-size: 18px; /* テキストのデフォルトの文字サイズを設定 */
+        }
+
+        h1, h2 {
+            font-size: 36px; /* h1, h2 の文字サイズを大きくする */
+            margin-bottom: 10px; /* タイトルの下に余白を設定 */
+        }
+
+        p, l1, l2 {
+            margin-bottom: 15px; /* 段落やリストの下に余白を設定 */
+        }
+
+        img {
+            margin-bottom: 30px; /* 画像とテキストの間隔を広くする */
+        }
+    </style>
 </head>
 <body>
-    <logotohome>
-    <a href="../index.html"><img src="./images/0_XBlogo.png" alt=""></a>
-    
-    <h1>Doyolab</h1>
+    <div class="container">
+        <h1>Doyolab</h1>
 
-    <h2>SONY.横浜市プロジェクト</h2>
-    <l1>活動内容</l1>
-<br>MESHを使用して行うワークショップに向けての準備段階<br>
-<img src="./images/IMG_8546.jpg" width="500%"><br>
-<img src="./images/IMG_8547.jpg" width="500%"><br>
-<l2></l2>
+        <h2>SONY.横浜市プロジェクト</h2>
+        <l1>活動内容</l1>
+        <p>MESHを使用して行うワークショップに向けての準備段階</p>
+        <l1>活動内容</l1>
+        <p>グループでMESHを使って色々な活用方法を考えた。</p>
+
+        <l2>グループで考えたアイデア</l2>
+        <p>眼鏡に振動センサーのMESHを用いてつけたときの振動でウルトラマンに変身できるようにした</p>
+        <p>ぷーさんの写真の前を通った時に、「いってらっしゃい」が流れるようにした</p>
+
+        <!-- 画像を大きくして見やすくする -->
+        <img src="./images/IMG_8546.jpg" width="100%" alt="">
+        <img src="./images/IMG_8547.jpg" width="100%" alt="">
+    </div>
+</body>
 </html>
