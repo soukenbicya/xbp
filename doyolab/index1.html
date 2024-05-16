@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Doyolab - 鎌倉共創プロジェクトの活動内容を紹介しています。">
+    <meta name="keywords" content="Doyolab, 鎌倉共創プロジェクト, 活動内容, テキストマイニング, インタビュー">
     <title>Doyolab</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/xbp.ico">
@@ -15,7 +18,7 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.8);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -25,7 +28,9 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: transparent;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             flex: 1;
         }
 
@@ -38,17 +43,18 @@
             height: auto;
             display: block;
             margin-bottom: 20px;
-            float: left;
         }
 
-        h1, h2, p, ul, li {
-            background-color: rgba(255, 255, 255, 0.5);
+        h1, h2, h3, h4, p, ul, li {
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 10px;
+            border-radius: 5px;
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
+            text-align: center;
         }
 
         nav ul li {
@@ -59,6 +65,17 @@
         nav ul li a {
             text-decoration: none;
             color: #333;
+            font-weight: bold;
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .images img {
+            margin: 10px;
         }
     </style>
 </head>
@@ -76,18 +93,28 @@
         <h1 id="home">Doyolab</h1>
 
         <h2 id="project">鎌倉共創プロジェクト</h2>
-        <p>活動内容</p>
+        <p>鎌倉共創プロジェクトの概要と目標について説明します。</p>
+        
+        <h3>活動内容</h3>
         <ul id="activities">
             <li>5月11日に行われるインタビューに向けての事前準備を行った。</li>
-            <li>テキストマイニングを行い、どんな言葉が多く使われているのかやその言葉同士の関連性について確認した。</li>
-            <li>テキストマイニングは、スマホのWordを用いて、音声入力を用いて行った。</li>
-            <li>4月26日リハーサルを行った。</li>
-            <li>リハーサルの際に、マイクとカメラを使用した。また、wordを使用して、テキストマイニングも行った</li>
+            <li>テキストマイニングを行い、よく使われる言葉やその言葉同士の関連性を確認した。</li>
+            <li>テキストマイニングは、スマホのWordを使用し、音声入力で行った。</li>
+            <li>4月26日にリハーサルを行った。</li>
+            <li>リハーサル時には、マイクとカメラを使用し、Wordを使用してテキストマイニングを行った。</li>
+            <h4>5月11日</h4>
+            <li>鎌倉市役所に行き、鎌倉市民の方にインタビューを行った。そのインタビューの様子を動画に残し、話の内容についてもテキストマイニングを行った。</li>
         </ul>
         
-        <img src="./images/mikumo.png" width="200" alt="">
-        <img src="./images/mikumo2.png" width="200" alt="">
-        <img src="./images/mikumo3.png" width="200" alt="">
+        <div class="images">
+            <img src="./images/mikumo.png" width="200" alt="ミクモ1の画像">
+            <img src="./images/mikumo2.png" width="200" alt="ミクモ2の画像">
+            <img src="./images/mikumo3.png" width="200" alt="ミクモ3の画像">
+            <img src="./images/a.jpg" width="200" alt="イベントの様子1">
+            <img src="./images/b.jpg" width="200" alt="イベントの様子2">
+            <img src="./images/c.jpg" width="200" alt="イベントの様子3">
+            <img src="./images/d.jpg" width="200" alt="イベントの様子4">
+        </div>
     </div>
 </body>
 </html>
