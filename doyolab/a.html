@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Doyolab - 鎌倉共創プロジェクトの活動内容を紹介しています。">
+    <meta name="keywords" content="Doyolab, 鎌倉共創プロジェクト, 活動内容, テキストマイニング, インタビュー">
+    <title>Doyolab</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/xbp.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://th.bing.com/th/id/R.3aa030dc1338ea734beb50638bba448d?rik=Jxfbkt4XroyC1g&riu=http%3a%2f%2fwww.tmyun.com%2fmid%2fyun_8938.jpg&ehk=v22YlEGUe%2boQXx7yMiLm6U77ka9a6HI8NFoXsJtfPsc%3d&risl=&pid=ImgRaw&r=0");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+
+        .logo-container {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        h1, h2, h3, h4, p, ul, li {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .images img {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="project.html">鎌倉共創プロジェクト</a></li>
+                <li><a href="activities.html">活動内容</a></li>
+                <li><a href="photos.html">写真</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 id="home">Doyolab</h1>
+
+        <h2 id="project">鎌倉共創プロジェクト</h2>
+        <p>鎌倉共創プロジェクトの概要と目標について説明します。</p>
+        
+        <h3>活動内容</h3>
+        <ul id="activities">
+            <li>5月11日に行われるインタビューに向けての事前準備を行った。</li>
+            <li>テキストマイニングを行い、よく使われる言葉やその言葉同士の関連性を確認した。</li>
+            <li>テキストマイニングは、スマホのWordを使用し、音声入力で行った。</li>
+            <li>4月26日にリハーサルを行った。</li>
+            <li>リハーサル時には、マイクとカメラを使用し、Wordを使用してテキストマイニングを行った。</li>
+            <h4>5月11日</h4>
+            <li>鎌倉市役所に行き、鎌倉市民の方にインタビューを行った。そのインタビューの様子を動画に残し、話の内容についてもテキストマイニングを行った。</li>
+            <h5>5月18日</h5>
+            <li>インタビューを行って、市民の方々の求めている物について共有し、それぞれ作りたいものを選んで製作を開始する。</li>
+            <h6>6月の活動内容</h6>
+            <li>3Dスキャナーを用いて、糸見さんの耳の形をスキャンした</li>
+            <li>3Dスキャナーでは耳の中の部分まで正確に出力することが出来なかったため、「おゆまる」を用いて耳の形を正確に出力した。</li>
+        </ul>
+        
+        <h3 id="photos">写真</h3>
+        <div class="images">
+            <img src="./images/mikumo.png" width="200" alt="ミクモ1の画像">
+            <img src="./images/mikumo2.png" width="200" alt="ミクモ2の画像">
+            <img src="./images/mikumo3.png" width="200" alt="ミクモ3の画像">
+            <img src="./images/a.jpg" width="200" alt="イベントの様子1">
+            <img src="./images/b.jpg" width="200" alt="イベントの様子2">
+            <img src="./images/c.jpg" width="200" alt="イベントの様子3">
+            <img src="./images/d.jpg" width="200" alt="イベントの様子4">
+        </div>
+    </div>
+</body>
+</html>
