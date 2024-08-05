@@ -71,11 +71,28 @@
         .images {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
+            gap: 10px;
         }
 
         .images img {
+            flex: 1 1 calc(33% - 20px);
+            max-width: calc(33% - 20px);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             margin: 10px;
+        }
+
+        .inline-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .inline-images img {
+            flex: 1 1 calc(20% - 20px);
+            max-width: calc(20% - 20px);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -102,47 +119,54 @@
             <li>テキストマイニングは、スマホのWordを使用し、音声入力で行った。</li>
             <li>4月26日にリハーサルを行った。</li>
             <li>リハーサル時には、マイクとカメラを使用し、Wordを使用してテキストマイニングを行った。</li>
-            <h4>5月11日</h4>
-            <li>鎌倉市役所に行き、鎌倉市民の方にインタビューを行った。そのインタビューの様子を動画に残し、話の内容についてもテキストマイニングを行った。</li>
-            <h5>5月18日</h5>
-            <li>インタビューを行って、市民の方々の求めている物について共有し、それぞれ作りたいものを選んで製作を開始する。</li>
-            <h6>6月の活動内容</h6>
-            <l1>製作物は、人それぞれに合わせたイヤホン</l1>
-            <li>3Dスキャナーを用いて、糸見さんの耳の形をスキャンした</li>
-            <li>3Dスキャナーでは耳の中の部分まで正確に出力することが出来なかったため、「おゆまる」を用いて耳の形を正確に出力した。</li>
-            <h7>7月の活動内容</h7>
-            <l1>6月の活動で製作したものを改善していく作業を行った。</l1>
-            <l1>最初はPLAで作成したが硬くうまくできなかった。</l1>
-            <l1>その後、TPUで作成したがボール盤を使用した際に破損してしまった。</l1>
-            <l1>レジンを用いた光で作成する方法に切り替えた。</l1>
         </ul>
-        
-        <h3 id="photos">写真</h3>
-        <div class="images">
+        <div class="inline-images">
             <img src="./images/mikumo.png" width="200" alt="ミクモ1の画像">
             <img src="./images/mikumo2.png" width="200" alt="ミクモ2の画像">
             <img src="./images/mikumo3.png" width="200" alt="ミクモ3の画像">
             <img src="./images/a.jpg" width="200" alt="イベントの様子1">
             <img src="./images/b.jpg" width="200" alt="イベントの様子2">
             <img src="./images/c.jpg" width="200" alt="イベントの様子3">
-            <img src="./images/d.jpg" width="200" alt="イベントの様子4">
-            <img src="./images/S__3579927_0.jpg"width="200" alt="過程">
-            <img src="./images/S__3579929_0.jpg"width="200" alt="過程">
-            <img src="./images/S__3579930_0.jpg"width="200" alt="過程">
-            <img src="./images/S__3579931_0.jpg"width="200" alt="過程">
-            <img src="./images/S__3579933_0.jpg"width="200" alt="過程">
-            <img src="./images/S__3579934_0.jpg"width="200" alt="過程">
-            <img src="./images/S__3579936_0.jpg"width="200" alt="過程">
-            <img src="./images/S__3579938_0.jpg"width="200" alt="過程">
-            <img src="./images/S__3579939_0.jpg"width="200" alt="過程">
-            <img src="./images/S__3579940_0.jpg"width="200" alt="過程">
-         
-
-
-
-
-
-
+        </div>
+        
+        <h4>5月11日</h4>
+        <ul>
+            <li>鎌倉市役所に行き、鎌倉市民の方にインタビューを行った。そのインタビューの様子を動画に残し、話の内容についてもテキストマイニングを行った。</li>
+        </ul>
+        <img src="./images/d.jpg" width="200" alt="イベントの様子4">
+        <h5>5月18日</h5>
+        <ul>
+            <li>インタビューを行って、市民の方々の求めている物について共有し、それぞれ作りたいものを選んで製作を開始する。</li>
+        </ul>
+        <h6>6月の活動内容</h6>
+        <ul>
+            <li>製作物は、人それぞれに合わせたイヤホン</li>
+            <li>3Dスキャナーを用いて、糸見さんの耳の形をスキャンした</li>
+            <li>3Dスキャナーでは耳の中の部分まで正確に出力することが出来なかったため、「おゆまる」を用いて耳の形を正確に出力した。</li>
+        </ul>
+        <h7>7月の活動内容</h7>
+        <ul>
+            <li>6月の活動で製作したものを改善していく作業を行った。</li>
+            <li>最初はPLAで作成したが硬くうまくできなかった。</li>
+            <li>その後、TPUで作成したがボール盤を使用した際に破損してしまった。</li>
+            <li>レジンを用いた光で作成する方法に切り替えた。</li>
+        </ul>
+        <h8>8月に行う必要があること</h8>
+    
+        <li>7月までの活動では完成しなかったため夏休み中にレジンに穴をあけたものに空気穴を取り付け、ブルートゥースイヤホンと接続できるようにする</li>
+        
+        <h3 id="photos">過程の写真</h3>
+        <div class="images">
+            <img src="./images/S__3579927_0.jpg" width="200" alt="過程">
+            <img src="./images/S__3579929_0.jpg" width="200" alt="過程">
+            <img src="./images/S__3579930_0.jpg" width="200" alt="過程">
+            <img src="./images/S__3579931_0.jpg" width="200" alt="過程">
+            <img src="./images/S__3579933_0.jpg" width="200" alt="過程">
+            <img src="./images/S__3579934_0.jpg" width="200" alt="過程">
+            <img src="./images/S__3579936_0.jpg" width="200" alt="過程">
+            <img src="./images/S__3579938_0.jpg" width="200" alt="過程">
+            <img src="./images/S__3579939_0.jpg" width="200" alt="過程">
+            <img src="./images/S__3579940_0.jpg" width="200" alt="過程">
         </div>
     </div>
 </body>
